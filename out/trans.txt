@@ -1,0 +1,17 @@
+(gdb) set disassembly-flavor intel
+(gdb) disas main
+Dump of assembler code for function main:
+   0x000004ed <+0>:     push   ebp
+   0x000004ee <+1>:     mov    ebp,esp
+   0x000004f0 <+3>:     sub    esp,0x10
+   0x000004f3 <+6>:     call   0x50b <__x86.get_pc_thunk.ax>
+   0x000004f8 <+11>:    add    eax,0x1b08
+   0x000004fd <+16>:    mov    DWORD PTR [ebp-0x4],0x539
+   0x00000504 <+23>:    mov    eax,0x0
+   0x00000509 <+28>:    leave
+   0x0000050a <+29>:    ret
+
+>>> int(0x539)
+1337
+>>>
+
