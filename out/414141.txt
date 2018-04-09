@@ -1,0 +1,11 @@
+
+out:     file format elf32-i386
+
+
+Disassembly of section .text:
+
+08048080 <_start>:
+ 8048080:	90                   	nop
+ 8048081:	b8 41 41 41 41       	mov    eax,0x41414141
+ 8048086:	bb 00 00 00 00       	mov    ebx,0x0
+ 804808b:	cd 80                	int    0x80
