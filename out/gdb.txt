@@ -1,0 +1,2 @@
+# cp gdb.txt ~/.gdbinit
+set disassembly-flavor intel
