@@ -1,7 +1,5 @@
-; nasm -f elf -g -F stabs out.asm
-; ld -o out out.o
 SECTION .data
-msg: db "Test String",10
+msg: db "Test String",10,0
 msg_len: equ $-msg
 SECTION .bss
 SECTION .text
