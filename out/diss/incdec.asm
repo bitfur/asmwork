@@ -6,7 +6,11 @@ SECTION .text
 global _start
 _start:
 	nop
-	; code here
+	mov eax,0FFFFFFFFh
+	mov ebx,02Dh
+	dec ebx
+	inc eax
+
 	nop
 	mov eax,1
 	mov ebx,0
