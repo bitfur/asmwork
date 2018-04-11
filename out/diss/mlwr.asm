@@ -8,7 +8,8 @@ _start:
 	nop
 	mov ebx,msg
 	mov eax,7
-process:add byte [ebx],32
+process:
+    add byte [ebx],32   ; inc by 32
 	inc ebx
 	dec eax
 	jnz process
