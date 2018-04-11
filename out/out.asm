@@ -6,6 +6,8 @@ SECTION .text
 global _start
 _start:
 	nop
+	; code here
+	nop
 	mov eax,1
 	mov ebx,0
 	int 80H
