@@ -1,0 +1,21 @@
+bjdump -M intel  -d out > diss/mlwr.txt
+
+out:     file format elf32-i386
+
+
+Disassembly of section .text:
+
+08048080 <_start>:
+ 8048080:	90                   	nop
+ 8048081:	bb a0 90 04 08       	mov    ebx,0x80490a0
+ 8048086:	b8 07 00 00 00       	mov    eax,0x7
+
+0804808b <process>:
+ 804808b:	80 03 20             	add    BYTE PTR [ebx],0x20
+ 804808e:	43                   	inc    ebx
+ 804808f:	48                   	dec    eax
+ 8048090:	75 f9                	jne    804808b <process>
+ 8048092:	90                   	nop
+ 8048093:	b8 01 00 00 00       	mov    eax,0x1
+ 8048098:	bb 00 00 00 00       	mov    ebx,0x0
+ 804809d:	cd 80                	int    0x80
