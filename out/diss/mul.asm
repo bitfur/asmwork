@@ -13,6 +13,10 @@ _start:
 	mov eax,0FFFFFFFFh
 	mov ebx,03B72h
 	mul ebx
+	mov eax,0FFFFFFFFh
+	mov ebx,0FFFFFFFFh
+	mul ebx
+	div ebx
 	nop
 	mov eax,1
 	mov ebx,0
